@@ -23,4 +23,5 @@
 .byebug_history
 
 # Ignore images
-/assets/images
+/assets/images/*
+*.DS_store
