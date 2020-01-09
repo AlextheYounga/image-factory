@@ -23,5 +23,5 @@
 .byebug_history
 
 # Ignore images
-/assets/images/*
+/app/assets/images/*
 *.DS_store
