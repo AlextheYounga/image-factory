@@ -5,6 +5,7 @@ Please follow the steps from gem Readme
 
 
 All image manipulation programs are found in the lib/tasks folder.
+All images to be manipulated should be placed in the assets/images folder.
 
 Available commands:
 rake assets:find_unused_images          # Finds unused images throughout an application
