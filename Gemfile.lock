@@ -206,6 +206,7 @@ DEPENDENCIES
   carrierwave-imageoptimizer
   coffee-rails (~> 4.2)
   colorize
+  execjs
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mini_magick

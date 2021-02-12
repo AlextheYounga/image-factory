@@ -34,6 +34,7 @@ gem 'colorize'
 gem 'carrierwave-imageoptimizer'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'execjs'
 
 
 # Use Capistrano for deployment
