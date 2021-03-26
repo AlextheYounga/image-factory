@@ -26,13 +26,13 @@ namespace :assets do
             image.crop "0x#{crop_pixels}+0+0"
           end
           image.format File.extname(filename)
-          output = File.join(Rails.root.join("lib", "assets", "#{File.basename(filename, File.extname(filename))}-thumb#{File.extname(filename)}"))
+          output = File.join(Rails.root.join("output", "images", "#{File.basename(filename, File.extname(filename))}-thumb#{File.extname(filename)}"))
           image.write output
           puts "#{output} write"
         else
           image.resize "#{size}x#{image.height}"
           image.format File.extname(filename)
-          output = File.join(Rails.root.join("lib", "assets", "#{File.basename(filename, File.extname(filename))}-#{size}#{File.extname(filename)}"))
+          output = File.join(Rails.root.join("output", "images", "#{File.basename(filename, File.extname(filename))}-#{size}#{File.extname(filename)}"))
           image.write output
           puts "#{output} write"
         end
