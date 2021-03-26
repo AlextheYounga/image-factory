@@ -11,7 +11,7 @@ namespace :assets do
       image.path
       #change image file type
       image.format "jpg"
-      output = File.join(Rails.root.join("app", "assets", "images", "#{File.basename(filename, File.extname(filename))}.jpg"))
+      output = File.join(Rails.root.join("output", "images", "#{File.basename(filename, File.extname(filename))}.jpg"))
       image.write output
       puts "#{output} write"
     end
