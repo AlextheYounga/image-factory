@@ -1,12 +1,12 @@
-require "rubygems"
+require 'rubygems'
 
-namespace :assets do
-  desc "Easily rename an image"
-  task :rename_images => :environment do
-    assets = File.join(Rails.root.join("app", "assets", "images")) #put images in lib/assets
+namespace :images do
+  desc 'Easily rename an image'
+  task rename: :environment do
+    assets = File.join(Rails.root.join('lib', 'assets')) # put images in lib/assets
 
     Dir["#{assets}/**/*"].each_with_index do |filename, i|
-      i = i + 1
+      i += 1
       image_name = File.basename(filename, File.extname(filename))
       image_rename = "grand-canyon-wedding-gallery-#{i}.jpg"
       filerenamed = File.join(assets, image_rename)

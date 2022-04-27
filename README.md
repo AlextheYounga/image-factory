@@ -2,6 +2,10 @@
 
 This app uses the awesome webffi gem: https://github.com/le0pard/webp-ffi
 
+## Required libraries
+Linux:
+```sudo apt-get install libjpeg-dev libpng-dev libtiff-dev libwebp-dev```
+
 Please follow the steps from gem Readme.
 
 
